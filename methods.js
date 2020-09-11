@@ -3,8 +3,8 @@ var Promise = require('es6-promise').Promise;
 
 const ipfs = new IPFS({
     host: 'ipfs.infura.io',
-    port: 5001, protocol:
-        'https'
+    port: 5001, 
+    protocol: 'https'
 });
 
 module.exports = {
