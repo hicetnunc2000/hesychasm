@@ -1,0 +1,22 @@
+{
+  "name": "express-ipfs",
+  "version": "1.0.0",
+  "description": "title-description storage and open api",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ipfs",
+    "express",
+    "open-api"
+  ],
+  "author": "@crzypatchwork",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "es6-promise": "^4.2.8",
+    "express": "^4.17.1",
+    "ipfs-api": "^26.1.2"
+  }
+}
