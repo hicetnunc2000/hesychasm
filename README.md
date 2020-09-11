@@ -15,10 +15,6 @@ curl --header "Content-Type: application/json" --request POST --data '{"hash":"Q
 
 curl --header "Content-Type: application/json" --request POST --data '{"list": ["QmP4Azn85QGrBXxzVkNAfFPS2a7hkE4uTdWxBE4TDErs1F", "QmesAfkmnyofDHSudrAYBtYeBTdBkV1Ffi6fpvmaCXdnRV"]}' http://ipfs-micro.herokuapp.com/get_list
 {"jsons":[{"data":{"title":"title","description":"description"}},{"data":{"title":"title2","description":"description2"}}]}
-
-
-
-
 ```
 
 http://ipfs-micro.herokuapp.com/
