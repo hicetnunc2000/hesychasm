@@ -40,9 +40,9 @@ module.exports = {
     },
 
     post_file: async (buffer, res) => {
-        console.log(buffer)
+        
         var ret = await ipfs.files.add(buffer)
-        console.log(ret)
+        
         res.json({
             hash: ret[0].hash
         })
