@@ -1,6 +1,5 @@
 const IPFS = require('ipfs-api');
 var Promise = require('es6-promise').Promise;
-var fs = require('fs');
 
 const ipfs = new IPFS({
     host: 'ipfs.infura.io',
