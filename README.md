@@ -1,6 +1,6 @@
 https://ipfs-micro.herokuapp.com/
 
-if you have any questions submit and issue
+if you have any questions submit an issue
 ```
 docker build -t ipfs-micro:latest .
 docker run -d -p 3000:3000 ipfs-micro
