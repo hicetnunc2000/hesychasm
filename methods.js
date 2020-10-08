@@ -1,5 +1,6 @@
 const IPFS = require('ipfs-api');
 var Promise = require('es6-promise').Promise;
+var fs = require('fs');
 
 const ipfs = new IPFS({
     host: 'ipfs.infura.io',
@@ -30,12 +31,21 @@ module.exports = {
     post: async (data, res) => {
 
         var buffer = Buffer.from(JSON.stringify(data))
-        var hash = await ipfs.files.add(buffer)
+        var ret = await ipfs.files.add(buffer)
         
         res.json({
-            hash: hash[0].hash
+            hash: ret[0].hash
         })
 
+    },
+
+    post_file: async (buffer, res) => {
+        console.log(buffer)
+        var ret = await ipfs.files.add(buffer)
+        console.log(ret)
+        res.json({
+            hash: ret[0].hash
+        })
     }
 
 }
