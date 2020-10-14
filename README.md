@@ -7,8 +7,9 @@ infrastructural protocol for making storage deals with filecoin. it's intended t
 the present repository contains a microsservice which composes it's stack.
 
 powergate service:
-https://github.com/hicetnunc2000/powergate-external-adapter```
+https://github.com/hicetnunc2000/powergate-external-adapter
 
+```
 docker build -t ipfs-micro:latest .
 docker run -d -p 3000:3000 ipfs-micro
 
