@@ -1,0 +1,35 @@
+
+service: hesychasm
+
+frameworkVersion: '2.8.0'
+
+provider:
+  name: aws
+  runtime: python3.7
+
+functions:
+  app:
+    handler: wsgi_handler.handler
+    events:
+      - http: 
+          method: ANY 
+          path: /
+          cors:
+            origin: '*'
+      - http: 
+          method: ANY 
+          path: /{proxy+}
+          cors:
+            origin: '*'
+
+custom:
+  wsgi:
+    app: app.app
+    pythonBin: python3
+    packRequirements: false
+  pythonRequirements:
+    dockerizePip: non-linux
+
+plugins:
+  - serverless-wsgi
+  - serverless-python-requirements

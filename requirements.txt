@@ -1,0 +1,5 @@
+flask_restx
+Flask
+flask_cors
+ipfshttpclient==0.7.0a1
+werkzeug==0.16.1
