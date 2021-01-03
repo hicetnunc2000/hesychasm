@@ -16,8 +16,8 @@ var/
 *.egg-info/
 .installed.cfg
 *.egg
-package-lock.json
-node_modules
+/package-lock.json
+/node_modules
 
 # Serverless directories
 .serverless
