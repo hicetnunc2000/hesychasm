@@ -36,11 +36,11 @@ class post_json(Resource):
         except:
             return 500
 
-@api.route('/get_json')
+@api.route('/read_cid')
 @api.doc(params={
     'cid': 'CID hash'
 })
-class get_json(Resource):
+class read_cid(Resource):
     def post(self):
         try:
             payload = v.read_requests(request)

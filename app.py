@@ -12,7 +12,7 @@ app = Flask(__name__)
 cors = CORS(app, supports_credentials=True)
 
 api = Api()
-api = Api(version = 'v1.0.0', 
+api = Api(version = '0.9.1', 
           title = 'hesychasm', 
           description= 'A serverless API for managing IPFS Content Identifiers (CIDs)',
           contact='hicetnunc2000@protonmail.com')
