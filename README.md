@@ -18,3 +18,5 @@ curl --header "Content-Type: application/json" --request POST --data '{"hash":"Q
 curl -i -X POST -H "Content-Type: multipart/form-data" -F "data=@umwelt.png" https://l2qqvxozj5.execute-api.us-east-1.amazonaws.com/dev/ipfs/post_file
 {"hash":"QmT9SX2YFqitWQPxPzA1gEZxgJqBRZP1Zc5ZyStaBfY3UW"}
 ```
+
+```MIT License```
