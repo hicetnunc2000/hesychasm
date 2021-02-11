@@ -18,15 +18,12 @@ v = Validate()
 
 
 @api.route('/post_file')
-@api.expect(upload_parser)
 class post_file(Resource):
-    @api.expect(type)
     def post(self):
-        with open('/tmp/OBJKT', 'wb') as w:
-            w.write(request.files['file'].read())
 
-        cid = conn.add('/tmp/OBJKT', recursive=True)
-        os.remove('/tmp/OBJKT')
+        payload = v.read_requests(request)
+        print(payload)
+        cid = conn.add_bytes(payload['buffer'])
 
         return { 'result': cid['Hash'] }
 
