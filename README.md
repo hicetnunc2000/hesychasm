@@ -1,6 +1,6 @@
 # hesychasm
 
-https://hesychasm.herokuapp.com /
+https://hesychasm.herokuapp.com
 
 IPFS Flask API as serverless infrastructure 
 
