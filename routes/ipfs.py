@@ -22,10 +22,9 @@ class post_file(Resource):
     def post(self):
 
         payload = v.read_requests(request)
-        print(payload)
         cid = conn.add_bytes(payload['buffer'])
 
-        return { 'result': cid['Hash'] }
+        return { 'result' : cid['Hash'] }
 
 
 @api.route('/post_json')
@@ -34,7 +33,7 @@ class post_json(Resource):
         try:
             payload = v.read_requests(request)
             cid = conn.add_json(payload)
-            return {'result': cid}
+            return { 'result' : cid }
         except:
             return 500
 
@@ -48,6 +47,6 @@ class read_cid(Resource):
         try:
             payload = v.read_requests(request)
             j = conn.get_json(payload['cid'])
-            return {'result': j}
+            return { 'result' : j }
         except:
             return 500
