@@ -16,7 +16,6 @@ conn = ipfshttpclient.connect('/dns4/ipfs.infura.io/tcp/5001/https')
 
 v = Validate()
 
-
 @api.route('/post_file')
 class post_file(Resource):
     def post(self):
